@@ -14,11 +14,9 @@ import org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring6.view.ThymeleafViewResolver;
 import org.thymeleaf.templatemode.TemplateMode;
 
-
-
-@EnableWebMvc // <mvc:annotation-driven />
+@EnableWebMvc
 @Configuration
-@ComponentScan(basePackages = "org.itstep") // <context:component-scan base-package="org.itstep"/>
+@ComponentScan(basePackages = "org.itstep")
 public class WebConfig implements WebMvcConfigurer {
     @Autowired
     private ApplicationContext applicationContext;
